@@ -10,10 +10,10 @@ int main() {
   // convert now to string form
   char* dt = ctime(&now);
 
-  cout << "The local date and time is: " << dt << endl;
+  std::cout << "The local date and time is: " << dt << std::endl;
 
   // convert now to tm struct for UTC
   tm* gmtm = gmtime(&now);
   char* dt1 = time_to_string(gmtm, "");
-  cout << "The time is:" << dt1 << endl;
+  std::cout << "The time is:" << dt1 << std::endl;
 }
